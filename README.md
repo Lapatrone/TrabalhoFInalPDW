@@ -76,5 +76,5 @@ Excel. (Opcional)
 # Grupo
 
 - João Paulo Patrão, a41015
-- xxxxx, aXXXX
+- Thiago Mafra, a40973
 - xxxxx, aXXXX
