@@ -16,6 +16,7 @@ componente servidor. A aplicação deve ser simples e intuitiva, mas completa.
 
 
 # Funcionalidades
+
 ## Login, Registo
 
 1.1 A aplicação deve permitir a realização do registo de um utilizador através do
@@ -27,7 +28,7 @@ mesma. (Opcional)
 1.3 A aplicação deve permitir ao utilizador, após o login, alterar a sua password.
 (Opcional)
 
-2 - Dashboard
+## 2 - Dashboard
 Após o login, o utilizador deve ser reencaminhado para o seu Dashboard, onde
 deverá ser possível obter a resposta às seguintes questões:
 
@@ -49,7 +50,7 @@ gastar menos, com base no histórico de meses passados, é apresentada uma
 projeção dos gastos para o que resta do mês e sugere limitar gastos em
 alguma(s)categorias. (Opcional)
 
-3 - Categorias
+## 3 - Categorias
 
 3.1 A aplicação deve permitir a visualização da lista de categorias, assim como as
 subcategorias dentro de cada categoria. (Obrigatório)
@@ -57,7 +58,7 @@ subcategorias dentro de cada categoria. (Obrigatório)
 3.2 A aplicação deve permitir adicionar, eliminar e editar a lista de categorias, assim
 como as subcategorias dentro de cada categoria. (Opcional)
 
-4 - Despesas
+## 4 - Despesas
 
 4.1 A aplicação deve permitir visualizar a lista de despesas assim como adicionar
 uma nova despesa manualmente. (Obrigatório)
