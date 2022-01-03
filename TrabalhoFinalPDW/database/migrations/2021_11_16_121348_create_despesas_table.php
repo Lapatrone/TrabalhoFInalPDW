@@ -14,8 +14,9 @@ class CreateDespesasTable extends Migration
     public function up()
     {
         Schema::create('despesas', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->string('nome');
+            $table->string('descricao');
+            $table->integer('valor');
         });
     }
 
