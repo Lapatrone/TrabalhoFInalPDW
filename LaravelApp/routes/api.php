@@ -20,16 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 /* Para entrar nas rotas, é preciso fazer login */ 
 
-/*
-    Route::prefix('v1')->middleware('jwt.auth')->group(function() {
-    Route::apiResource('cliente', 'App\Http\Controllers\ClienteController');
-    Route::apiResource('carro', 'App\Http\Controllers\CarroController');
-    Route::apiResource('locacao', 'App\Http\Controllers\LocacaoController');
-    Route::apiResource('marca', 'App\Http\Controllers\MarcaController');
-    Route::apiResource('modelo', 'App\Http\Controllers\ModeloController');
-});
-*/
-
 Route::prefix('v1')->middleware('jwt.auth')->group(function() {
 
 Route::post('me', 'App\Http\Controllers\AuthController@me');
