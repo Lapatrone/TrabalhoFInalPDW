@@ -67,3 +67,27 @@ Comando:
 ## Remover os métodos 
 
 Edit e create
+
+## Instalando o JWT
+
+`composer require tymon/jwt-auth` 
+
+## Configurando o JWT
+
+Add the service **provider** to the providers array in the **config/app.php** config file as follows:
+
+'providers' => [
+
+    ...
+
+    Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+]
+
+
+link : `https://jwt-auth.readthedocs.io/en/develop/laravel-installation/`
+
+link2 : https://jwt-auth.readthedocs.io/en/develop/quick-start/
+
+## Funções criadas
+
+Recuperar dados do usuário, atulizando o JWT e invalidando o JWT
