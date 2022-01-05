@@ -63,3 +63,7 @@ Model, Controllers, Migrations
 Comando: 
 
 `php artisan migrate`  
+
+## Remover os métodos 
+
+Edit e create

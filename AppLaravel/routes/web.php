@@ -20,3 +20,6 @@ Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'das
 Route::get('/dashboard/{despesas}', function(string $despesas){
         echo 'Oi: ' .$despesas;
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
