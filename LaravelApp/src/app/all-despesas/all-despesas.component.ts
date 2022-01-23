@@ -15,7 +15,7 @@ export class AllDespesasComponent implements OnInit {
   }
 
   ngOnInit(){
-    this.adicionarDespesa = this.service.despesas;
+    //this.adicionarDespesa = this.service.despesas;
   }
 
 }
