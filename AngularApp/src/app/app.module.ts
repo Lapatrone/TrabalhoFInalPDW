@@ -9,15 +9,17 @@ import { AllDespesasComponent } from './all-despesas/all-despesas.component';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt'
 import { HttpClientModule } from '@angular/common/http';
+import { SigninComponent } from './signin/signin.component';
 
 registerLocaleData(localePt, 'pt');
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     NovaDespesaComponent,
-    AllDespesasComponent
-  ],
+    AllDespesasComponent,
+      SigninComponent
+   ],
   imports: [
     BrowserModule,
     FormsModule,
