@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { SigninComponent } from './signin/signin.component';
+import { NgModule } from '@angular/core';
 
-@Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+
+@NgModule({
+  declarations:[ SigninComponent ]
 })
-export class HomeComponent implements OnInit {
 
-  constructor() { }
+export class HomeComponent {
 
-  ngOnInit() {
-  }
+
 
 }
