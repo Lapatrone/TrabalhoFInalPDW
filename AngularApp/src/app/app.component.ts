@@ -14,7 +14,5 @@ export class AppComponent {
 
   }
 
-  adicionar($event: any){
-    this.service.adicionar($event);
-  }
+
 }

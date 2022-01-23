@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Data } from '../models/despesas.model';
+import { Datum } from '../models/despesas.model';
 import { DespesasService } from '../services/despesas.service';
 
 @Component({
@@ -17,9 +17,9 @@ export class AllDespesasComponent implements OnInit {
   }
 
   ngOnInit(){
-    this.service.todas().subscribe((data: Data[]) =>{
-      console.log(data);
-      this.adicionarDespesa = data;
+    this.service.todas().subscribe((adicionarDespesa: Datum[]) =>{
+      console.log(adicionarDespesa);
+      this.adicionarDespesa = adicionarDespesa;
     });
     //this.adicionarDespesa = this.service.despesas;
   }

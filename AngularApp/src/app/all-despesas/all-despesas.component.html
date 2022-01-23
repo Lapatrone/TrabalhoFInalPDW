@@ -1,0 +1,19 @@
+<section class="container">
+  <h2 class="titulo">Despesas</h2>
+  <table class="tabela">
+    <thead class="tabela__cabecalho">
+      <th class="tabela__cabecalho__conteudo">Data adicionada</th>
+      <th class="tabela__cabecalho__conteudo">Despesa</th>
+    </thead>
+    <tbody *ngIf="adicionarDespesa.length > 0; else listaVazia">
+      <tr class="tabela__linha" *ngFor="let despesa of adicionarDespesa">
+        <td class="tabela__conteudo">{{ despesa?.data | date: "short" }}</td>
+        <td class="tabela__conteudo">{{ despesa?.nome }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ng-template #listaVazia>
+    <p>Nenhuma despesa cadastrada</p>
+  </ng-template>
+</section>
