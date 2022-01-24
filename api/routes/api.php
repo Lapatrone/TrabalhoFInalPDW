@@ -30,6 +30,7 @@ Route::prefix('v1')->middleware('jwt.auth')->group(function() {
 Route::apiResource('despesa', 'App\Http\Controllers\DespesasController');
 Route::apiResource('categoria', 'App\Http\Controllers\CategoriaController');
 Route::post('login', 'App\Http\Controllers\AuthController@login');
+Route::post('register', 'App\Http\Controllers\AuthController@register');
 
 /*
 $router->group(['prefix' => 'api'], function () use ($router){
