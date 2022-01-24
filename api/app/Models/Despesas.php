@@ -16,6 +16,7 @@ class Despesas extends Model
     return $this->hasMany(Categoria::class);
    }
 
+   
    public function getLinksAttribute(): array
    {
       return [

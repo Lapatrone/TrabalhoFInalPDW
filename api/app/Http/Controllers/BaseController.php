@@ -19,7 +19,7 @@ abstract class BaseController
     {
         return response()
         ->json(
-          $this->classe::create($request->all()), 
+          $this->classe::create($request->all()),
             201);
     }
 
@@ -41,7 +41,7 @@ abstract class BaseController
       if(is_null($recurso)){
         return response()->json(['erro' => 'Recurso não encontrado'], 404);
       }
-      
+
       $recurso->fill($request->all());
       $recurso->save();
 
@@ -59,5 +59,5 @@ abstract class BaseController
 
     return response()->json('', 204);
 }
-    
+
 }
